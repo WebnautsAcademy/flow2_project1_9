@@ -1,5 +1,6 @@
 a{
     text-decoration: none;
+    color: #20242D;
 }
 
 .page-header {
@@ -88,11 +89,97 @@ a{
     color: #20242D;
 }
 
+.title-white{
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 97%;
+    color: #FFFFFF;
+}
+
 .text-container{
-    font-family: Gilroy;
+    font-family: Gilroy, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #20242D;
+}
+
+.image-slide-wrapper img{
+    width: 1019px;
+    height: 532px;
+}
+
+.contact-naming{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7B7E85;
+}
+
+.email-link-contacts a{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.phone-link-contacts a{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.installation-title{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #20242D;
+}
+
+.installation-title-list{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #20242D;
+}
+
+.installation-list-items-container{    
+    width: 700px;
+    height: 40px;
+    left: 450px;
+    top: 3504px;
+    background: #F2F2F2;
+}
+
+.installation-list-items{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #20242D;
+}
+
+.installation-final{
+    width: 700px;
+    height: 236px;
+    left: 450px;
+    top: 4966px;
+    background: #F2F2F2;
+}
+
+.orange-text{
+    color: #FF7129;
 }
