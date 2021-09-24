@@ -1,0 +1,281 @@
+* {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #20242D;
+}
+
+.page-header {
+    background-color: white;
+}
+
+.navigation-link {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #20242D;
+}
+
+.active-nav-link {
+    color: #FF7129;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 12px;
+    padding-bottom: 7px;
+}
+
+.header-wrapper-contacts {
+    background-color: #20242D;
+    color: #ffffff;
+}
+
+.contact-link{
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.header-address{
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+
+.welcome-section{
+    background-color: #5a6a81;
+}
+
+.main-title{
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 92px;
+    line-height: 111px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.welcome-text{
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button{
+    background: #FF7129;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.title{
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 97%;
+    color: #20242D;
+}
+
+.title-white{
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 97%;
+    color: #FFFFFF;
+}
+
+.text-container{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #20242D;
+}
+
+.image-slide-wrapper img{
+    width: 1019px;
+    height: 532px;
+}
+
+.contact-naming{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7B7E85;
+}
+
+.email-link-contacts a{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.phone-link-contacts a{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.installation-title{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #20242D;
+}
+
+.installation-title-list{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #20242D;
+}
+
+.installation-list-items-container{    
+    width: 700px;
+    height: 40px;
+    left: 450px;
+    top: 3504px;
+    background: #F2F2F2;
+}
+
+.installation-list-items{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #20242D;
+}
+
+.installation-final{
+    width: 700px;
+    height: 236px;
+    left: 450px;
+    top: 4966px;
+    background: #F2F2F2;
+}
+
+.orange-text{
+    color: #FF7129;
+}
+
+.li-footer{
+    color: white;
+}
+
+.navigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+    align-items: center;
+}
+
+.navigation-list li {
+    margin-right: 56px;
+}
+
+.navigation-list li:last-child{
+    margin: 0;
+}
+
+.header-wrapper-contacts {
+    justify-content: flex-start;
+}
+
+.header-address {
+    margin-right: auto;
+}
+
+.contact-link:first-of-type {
+    margin-right: 56px;
+}
+
+.footer-wrapper{
+    background-color: #20242D;      
+    padding-left: 50px;
+    padding-right: 50px;    
+}
+
+.footer-menu {
+    display: flex;    
+    /* padding-top: 56px; */
+    justify-content: space-between;    
+}
+
+.footer-list-wrapper {
+    display: flex;
+    color: #FFFFFF;
+    list-style-type: none;    
+}
+
+.footer-list-wrapper a {
+    color: #FFFFFF;    
+    margin-right: 56px;    
+}
+
+.footer-menu button {
+    margin-left: auto;
+}
+
+
+.footer-line hr {
+    color: #7B7E85;
+    height: 1px;
+}
+
+.footer-links-politics {
+    margin-top: 24px;
+    display: flex;
+}
+
+.footer-links-politics a {
+    color: #7B7E85;    
+}
+
+.footer-links-politics a:first-of-type {
+    margin-right: auto;
+}
+
