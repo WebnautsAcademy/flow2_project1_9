@@ -201,10 +201,6 @@ a{
     color: #FF7129;
 }
 
-footer{
-    background-color: #20242D
-}
-
 .li-footer{
     color: white;
 }
@@ -236,3 +232,50 @@ footer{
 .contact-link:first-of-type {
     margin-right: 56px;
 }
+
+.footer-wrapper{
+    background-color: #20242D;      
+    padding-left: 50px;
+    padding-right: 50px;    
+}
+
+.footer-menu {
+    display: flex;    
+    /* padding-top: 56px; */
+    justify-content: space-between;    
+}
+
+.footer-list-wrapper {
+    display: flex;
+    color: #FFFFFF;
+    list-style-type: none;    
+}
+
+.footer-list-wrapper a {
+    color: #FFFFFF;    
+    margin-right: 56px;    
+}
+
+.footer-menu button {
+    margin-left: auto;
+}
+
+
+.footer-line hr {
+    color: #7B7E85;
+    height: 1px;
+}
+
+.footer-links-politics {
+    margin-top: 24px;
+    display: flex;
+}
+
+.footer-links-politics a {
+    color: #7B7E85;    
+}
+
+.footer-links-politics a:first-of-type {
+    margin-right: auto;
+}
+
