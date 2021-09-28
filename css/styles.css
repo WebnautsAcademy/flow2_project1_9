@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -42,6 +44,27 @@ ul {
 
 .active-nav-link {
     color: #FF7129;
+    position: relative;
+}
+
+.active-nav-link::before {
+    position: absolute;
+    content: '';
+    background-color: #FF7129;
+    width: 10px;
+    height: 1px;
+    top: 50%;
+    left: -18px;
+}
+
+.active-nav-link::after {
+    position: absolute;
+    content: '';
+    background-color: #FF7129;
+    width: 10px;
+    height: 1px;
+    top: 50%;
+    right: -18px;
 }
 
 .header-wrapper{
@@ -51,6 +74,7 @@ ul {
     padding-right: 50px;
     padding-top: 12px;
     padding-bottom: 7px;
+    align-items: center;
 }
 
 .header-wrapper-contacts {
@@ -79,6 +103,40 @@ ul {
 
 .welcome-section{
     background-color: #5a6a81;
+}
+
+.welcome-section-wrapper {
+    position: relative;
+}
+
+.welcome-section-wrapper::before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/solar.png');
+    width: 379px;
+    height: 145px;
+    background-repeat: no-repeat;
+    top: 167px;
+    left: 50px;
+}
+
+.welcome-section-wrapper::after {
+    position: absolute;
+    content: 'Energy';
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 145px;
+    text-transform: uppercase;
+    color: transparent;    
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    opacity: 0.3;
+    top: 417px;
+    right: 50px;
+
+    
 }
 
 .main-title{
