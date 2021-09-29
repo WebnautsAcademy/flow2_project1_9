@@ -1,9 +1,12 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
 body {
     box-sizing: border-box;
+    margin: 0;
 }
 
 a{
@@ -11,8 +14,23 @@ a{
     color: #20242D;
 }
 
+section {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
 .page-header {
     background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .navigation-link {
@@ -26,6 +44,27 @@ a{
 
 .active-nav-link {
     color: #FF7129;
+    position: relative;
+}
+
+.active-nav-link::before {
+    position: absolute;
+    content: '';
+    background-color: #FF7129;
+    width: 10px;
+    height: 1px;
+    top: 50%;
+    left: -18px;
+}
+
+.active-nav-link::after {
+    position: absolute;
+    content: '';
+    background-color: #FF7129;
+    width: 10px;
+    height: 1px;
+    top: 50%;
+    right: -18px;
 }
 
 .header-wrapper{
@@ -35,6 +74,7 @@ a{
     padding-right: 50px;
     padding-top: 12px;
     padding-bottom: 7px;
+    align-items: center;
 }
 
 .header-wrapper-contacts {
@@ -65,6 +105,40 @@ a{
     background-color: #5a6a81;
 }
 
+.welcome-section-wrapper {
+    position: relative;
+}
+
+.welcome-section-wrapper::before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/solar.png');
+    width: 379px;
+    height: 145px;
+    background-repeat: no-repeat;
+    top: 167px;
+    left: 50px;
+}
+
+.welcome-section-wrapper::after {
+    position: absolute;
+    content: 'Energy';
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 145px;
+    text-transform: uppercase;
+    color: transparent;    
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    opacity: 0.3;
+    top: 417px;
+    right: 50px;
+
+    
+}
+
 .main-title{
     font-family: 'Gilroy', sans-serif;
     font-style: normal;
@@ -73,6 +147,7 @@ a{
     line-height: 111px;
     text-align: center;
     color: #FFFFFF;
+    padding-top: 271px;
 }
 
 .welcome-text{
@@ -89,12 +164,22 @@ a{
     background: #FF7129;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
     font-family: 'Gilroy', sans-serif;
+    border: #FF7129;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+    width: 187px;
+    height: 49px;    
+}
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 59px;
+    padding-bottom: 290px;
 }
 
 .title{
@@ -113,6 +198,21 @@ a{
     font-size: 48px;
     line-height: 97%;
     color: #FFFFFF;
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-bottom: 103px;
+}
+
+.installation-title-main {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 97%;
+    color: #FFFFFF;
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-bottom: 163px;
 }
 
 .text-container{
@@ -175,9 +275,12 @@ a{
 .installation-list-items-container{    
     width: 700px;
     height: 40px;
-    left: 450px;
-    top: 3504px;
     background: #F2F2F2;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    
 }
 
 .installation-list-items{
@@ -187,6 +290,7 @@ a{
     font-size: 16px;
     line-height: 24px;
     color: #20242D;
+    padding-left: 57px;
 }
 
 .installation-final{
@@ -195,6 +299,10 @@ a{
     left: 450px;
     top: 4966px;
     background: #F2F2F2;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 120px;
 }
 
 .orange-text{
@@ -237,27 +345,47 @@ a{
     background-color: #20242D;      
     padding-left: 50px;
     padding-right: 50px;    
+    
 }
 
 .footer-menu {
     display: flex;    
-    /* padding-top: 56px; */
-    justify-content: space-between;    
+    align-items: center;
+    justify-content: center;
+    padding-top: 58px;
+    padding-bottom: 52px;
 }
 
 .footer-list-wrapper {
+    margin-left: auto;
     display: flex;
     color: #FFFFFF;
     list-style-type: none;    
 }
+
+
 
 .footer-list-wrapper a {
     color: #FFFFFF;    
     margin-right: 56px;    
 }
 
-.footer-menu button {
-    margin-left: auto;
+.footer-list-wrapper:first-of-type {
+    margin-right: auto;
+}
+
+
+.footer-button {
+    width: 187px;
+    height: 49px;
+    background-color: transparent;
+    border: 1px solid #FF7129;
+    color: #FFFFFF;
+    font-family: Gilroy, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
 }
 
 
@@ -273,9 +401,104 @@ a{
 
 .footer-links-politics a {
     color: #7B7E85;    
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .footer-links-politics a:first-of-type {
     margin-right: auto;
 }
 
+.footer-active-link a {
+    color: #FF7129;
+}
+
+.info-section {
+    display: flex;
+    padding-top: 132px;
+}
+
+.image-wrapper {
+    padding-left: 134px;
+    padding-right: 65px;
+    padding-bottom: 115px;
+
+}
+
+.info-text-wrapper {
+    padding-top: 45px;
+}
+
+.section-about {
+    display: flex;    
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-left: 200px;
+    padding-bottom: 184px;
+}
+
+.about-column1 {    
+    width: 534px;
+    margin-right: 66px;
+}
+
+.about-column2 {
+    /* padding-left: 66px; */
+    width: 534px;
+
+}
+
+.projects-title{
+    margin-left: 200px;
+    margin-top: 123px;
+    margin-bottom: 75px;
+    color: red;
+}
+
+.projects-slider {
+    list-style-type: none;
+    display: block;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-right: auto;
+}
+
+.installation-section1 {
+    padding-top: 58px;
+}
+
+.lm-450 {
+    margin-left: 450px;    
+    width: 700px;
+    margin-top: 64px;
+}
+
+.installation-dbl-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-title {
+    padding-top: 125px;
+    padding-left: 200px;
+}
+
+.contact-wrapper {
+    padding-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.mt-178 {
+    margin-top: 112px;
+}
+
+.contact-address     {
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #20242D;
+}
