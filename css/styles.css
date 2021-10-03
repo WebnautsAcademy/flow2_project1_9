@@ -170,6 +170,7 @@ ul {
     height: 49px;    
 }
 
+
 .centered-button::after{
     position: absolute;
     content: '';
@@ -614,3 +615,127 @@ ul {
     left: 173px;
     top: 131px;
 }
+
+.button-red {
+    background-color: red;
+}
+
+.popup-container {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 36, 45, 0.9);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-container-hidden {
+    display: none;
+}
+
+.popup {
+    /* padding: 20px; */
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 97px;
+    padding-bottom: 72px;
+    background-color: #FFFFFF;
+    position: relative;
+    width: 800px;
+}
+
+.close {
+    position: absolute;
+    background-image: url('../img/x.svg');
+    background-color: transparent;
+    border: 0;
+    top:10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.popup-form {
+    display: flex;    
+    position: relative;
+    
+}
+
+.popup-form p:nth-child(2), input:nth-child(2) {
+    position: absolute;
+    left: 357px;
+}
+
+.footer-popup::before{
+    content: 'Callback';
+    position: absolute;
+    width: 474px;
+    height: 116px;
+    left: 32px;
+    top: 28px;
+    font-family: Gilroy, sans-serif;    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 116px;
+    text-transform: uppercase;
+    opacity: 0.1;
+    color: transparent;    
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #20242D;
+}
+
+.popup form button {
+    margin-top: 40px;
+}
+
+.close-callback-popup {
+    background: url('../img/x.svg');
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+
+input::placeholder {
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7B7E85;
+}
+
+input {
+    border: 1px solid #E0E0E0;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    width: 327px;
+}
+
+.grey {
+    color: #7B7E85;
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
