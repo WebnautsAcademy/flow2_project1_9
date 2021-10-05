@@ -1,3 +1,24 @@
+@font-face {
+    font-family: Gilroy;
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Gilroy-Regular.woff');
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: 600;
+    font-style: normal;
+    src: url('../fonts/Gilroy-Semibold.woff');
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Gilroy-Bold.woff');
+}
+
 *,
 *::before,
 *::after {
@@ -733,9 +754,90 @@ input {
     line-height: 24px;
 }
 
-@font-face {
-    font-family: "Gilroy";
-    src: url("../fonts/gilroy-regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    } 
+img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.projects-slider {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;    /* position: relative; */
+    width: 100%;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.projects-slider ul {
+    list-style: none;
+    /* margin-left: 30px; */
+}
+
+.slider-item-active {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;    
+    width: 1020px;
+    height: 500px;
+}
+
+
+.left-button {
+    content: '';
+    position: absolute;
+    background-color: #FF7129;
+    background-image: url('../img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    left: 10%;
+    top: 225px;
+    z-index: 1;
+}
+
+.right-button {
+    content: '';
+    position: absolute;
+    background-color: #FF7129;
+    background-image: url('../img/arrow.svg');
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    right: 10%;
+    top: 225px;
+    z-index: 1;
+}
+
+.empty-shell {
+    display: flex;
+    flex: 1 1020px 1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slider-item-left {
+    position: absolute;
+    left: -920px;
+    width: 1020px;
+    height: 500px;
+    opacity: 0.5;
+}
+
+.slider-item-right {
+    position: absolute;
+    right: -920px;
+    width: 1020px;
+    height: 500px;
+    opacity: 0.5;
+}
+
+.slider-item-hidden {
+    display: none;
+}
