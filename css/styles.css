@@ -255,6 +255,23 @@ ul {
     height: 49px;    
 }
 
+.button-popup {
+    background: #FF7129;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    font-family: 'Gilroy', sans-serif;
+    border: #FF7129;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 187px;
+    height: 49px;    
+    margin-left: 250px;
+    margin-top: 56px;
+}
+
 
 .centered-button::after{
     position: absolute;
@@ -387,6 +404,28 @@ ul {
     font-size: 16px;
     line-height: 24px;
     color: #20242D;
+}
+
+.flex-me {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 56px;
+}
+
+.flex-me p:first-of-type {
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.flex-me p:last-of-type {
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .image-slide-wrapper img{
@@ -825,6 +864,22 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+}
+
+.popup-container-calculation {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 36, 45, 0.9);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
 .popup-container-hidden {
@@ -832,7 +887,6 @@ ul {
 }
 
 .popup {
-    /* padding: 20px; */
     padding-left: 58px;
     padding-right: 58px;
     padding-top: 97px;
@@ -840,6 +894,25 @@ ul {
     background-color: #FFFFFF;
     position: relative;
     width: 800px;
+    z-index: 2;
+}
+
+.popup::before {
+    content: "Calculator";
+    position:absolute;
+    top: 28px;
+    left: 32px;
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 116px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #20242D;
+    text-stroke: 1px #20242D;
+    opacity: 0.1;
 }
 
 .close {
@@ -847,10 +920,25 @@ ul {
     background-image: url('../img/x.svg');
     background-color: transparent;
     border: 0;
-    top:10px;
-    right: 10px;
+    top: 20px;
+    right: 30px;
     width: 15px;
     height: 15px;
+    z-index: 2;
+}
+
+
+
+.close-calc, .close-thanks {
+    position: absolute;
+    background-image: url('../img/x-white.svg');
+    background-color: transparent;
+    border: 0;
+    top: 20px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    z-index: 2;
 }
 
 .popup-form {
@@ -883,9 +971,6 @@ ul {
     -webkit-text-stroke-color: #20242D;
 }
 
-.popup form button {
-    margin-top: 40px;
-}
 
 .close-callback-popup {
     background: url('../img/x.svg');
@@ -1062,4 +1147,195 @@ img {
     left: -27px;
     top: -67px;
     z-index: 1;   
+}
+
+.input-type-range input {
+    width: 100%
+}
+
+.custom-select{
+    width: 327px;
+    height: 50px;
+    background: #FFFFFF;    
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7B7E85;
+    /* padding-top: 16px; */
+    padding-left: 24px;
+}
+
+.select-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+
+.label-select {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7B7E85;
+    margin-bottom: 12px;
+}
+
+.mt-56 {
+    margin-top: 56px;
+}
+
+.calc-wrapper {    
+    background-color: #FFFFFF;
+    position: relative;
+    width: 800px;
+    height: 717px;
+    z-index: 1;
+}
+
+.calc-header {    
+    width: 800px;
+    height: 225px;
+    padding: 0;
+    margin-top: -16px;
+    background: #FF7129;
+}
+
+.calc-header-text {
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-top: 72px;
+    padding-left: 58px;
+}
+
+.flex-calc {
+    display: flex;
+    justify-content:space-between;
+    margin-top: -68px;
+}
+
+.calc-header-sum{
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    margin-left: 58px;
+}
+
+.btn-sum {    
+    width: 187px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    margin-top: 40px;
+    margin-right: 58px;
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FF7129;
+}
+
+.calc-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
+.calc-input {
+    width: 327px;
+    height: 52px;
+}
+
+.calc-input {
+    margin-left: 58px;
+}
+
+.calc-input:nth-child(1) {
+    margin-left: 58px;
+}
+
+input, label {
+    display:block;    
+}
+
+.btn-calc {
+    width: 187px;
+    height: 49px;
+    background: #FF7129;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: 58px;
+}
+
+.ml-58 {
+    margin-left: 58px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.thanks-wrapper {    
+    background-color: #FF7129;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 800px;
+    height: 468px;
+    z-index: 1;
+}
+
+.thanks-title {
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    margin-top: 40px;  
+}
+
+.thanks-text {
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.thanks-button {
+    width: 187px;
+    height: 49px;
+    background: #FFFFFF;
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FF7129;
 }

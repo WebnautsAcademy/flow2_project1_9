@@ -118,31 +118,92 @@
     </footer>
 
 
-    <!-- POPUP -->
+    <!-- POPUP 1 -->
     <div class="popup-container popup-container-hidden ">
         <div class="popup">
-            <h2>Obliczyć koszt</h2>
-            <p>Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
-
-            <form action="">
+            <h2 class="title">Obliczyć koszt</h2>
+            <p class="text-container">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+            <div class="flex-me">
                 <p>Roczne zużycie energii elektrycznej</p>
-                <span>42 200 kWh</span>
+                <p>42 200 kWh</p>
+            </div>
+            <form action="">                
                 <div class="input-type-range">
-                    <div></div>
-                    <button class="button-thumb"></button>
+                    <input type="range" id="volume" name="custominput" min="0" max="1000" width="467px">                    
                 </div>
-                <div class="select-container">
-                    <select name="" id="" class="custom-select">
-                        <option value="Wybierz z listy">Wybierz z listy</option>
-                        <option value="Południowy">Południowy</option>
-                        <option value="Wschodni">Wschodni</option>
-                        <option value="Zachodni">Zachodni</option>
-                    </select>
+                <!-- <button class="button-thumb"></button> -->
+                <div class="flex-me">
+                    <div class="select-container">
+                        <span class="label-select">Strona świata</span>
+                        <select name="" id="" class="custom-select">
+                            <option value="Wybierz z listy">Wybierz z listy</option>
+                            <option value="Południowy">Południowy</option>
+                            <option value="Wschodni">Wschodni</option>
+                            <option value="Zachodni">Zachodni</option>
+                        </select>
+                    </div>
+                    <div class="select-container">
+                        <span class="label-select">Materiał dachu</span>
+                        <select name="" id="" class="custom-select">
+                            <option value="Wybierz z listy">Wybierz z listy</option>
+                            <option value="Południowy">Południowy</option>
+                            <option value="Wschodni">Wschodni</option>
+                            <option value="Zachodni">Zachodni</option>
+                        </select>
+                    </div>
+                </div>
 
-                </div>
-                <button class="button" type="button">Obliczyć</button>
-                <button class="close" type="button"></button>
+                <button class="button-popup" type="button">Obliczyć</button>
+                <button class="close"  type="button"></button>
             </form>
+        </div>
+    </div>
+
+    <!-- POPUP 2 popup-container-hidden -->
+    <div class="popup-container-calculation popup-container-hidden">        
+        <div class="calc-wrapper">
+            <button class="close-calc"  type="button"></button>
+            <div class="calc-header">
+                <p class="calc-header-text">Przybliżony koszt:</p>
+                <div class="flex-calc">
+                    <p class="calc-header-sum">40 000 zł</p>
+                    <button class="btn-sum">Przeliczyć</button>
+                    <!-- <div><button class="btn-sum">Przeliczyć</button></div> -->
+                    
+                </div>
+            </div>            
+            <p class="title" style="margin-left: 75px;">Jakieś pytania?</p>
+            <p class="text-container" style="margin-left: 59px; margin-top: -16px; margin-right:48px">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
+            <form action="" >
+                
+                <div class="calc-form">
+                    <p class="label-select ml-58">Twoje imię</p>
+                    <p class="label-select" style="margin-left: 290px">E-mail</p>
+                </div>
+                <div class="calc-form">
+                    <input type="text" class="calc-input" placeholder="Wprowadź swoje imię">
+                    <input type="text" class="calc-input" placeholder="Wprowadź mail">
+                </div>
+
+                <p class="label-select ml-58 mt-24">Telefon</p>
+                <div class="calc-form">
+                    <input type="text" class="calc-input" placeholder="Wprowadź telefon">
+                    <button type="submit" class="btn-calc">Wysłać prośbę</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- POPUP 3 popup-container-hidden -->
+    <div class="popup-container popup-container-hidden popup-3">        
+        <div class="thanks-wrapper">
+            <button class="close-thanks"  type="button"></button>
+            <img src="./img/thanks.svg" alt="thanks" width="80" height="57" style="margin-top: 92px;">
+            <h2 class="thanks-title">Dziękuję za twoją prośbę</h2>
+            <p class="thanks-text">Nasz menedżer wkrótce się z Tobą skontaktuje</p>       
+            <button class="thanks-button">Ok</button>        
+            
         </div>
     </div>
 
@@ -161,7 +222,7 @@
                     <input type="text" placeholder="Wprowadź swoje imię">
                     <input type="text" placeholder="Wprowadź telefon">
                 </div>
-                <button class="button">Zadzwoń</button>
+                <button class="button mt-56">Zadzwoń</button>
             </form>
             
         </div>
@@ -172,3 +233,5 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+
+
